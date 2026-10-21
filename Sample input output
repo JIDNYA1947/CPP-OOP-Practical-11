@@ -1,0 +1,92 @@
+## a) Sample Input and Output — List Class (Student Attendance Management System)
+
+Sample Input
+1
+101
+1
+102
+1
+103
+3
+2
+102
+3
+4
+
+
+Sample Output
+1. Add Student
+2. Remove Student
+3. Display Students
+4. Exit
+Enter choice: 1
+Enter roll number: 101
+Student added successfully!
+
+Enter choice: 1
+Enter roll number: 102
+Student added successfully!
+
+Enter choice: 1
+Enter roll number: 103
+Student added successfully!
+
+Enter choice: 3
+Student Roll Numbers: 101 102 103
+
+Enter choice: 2
+Enter roll number to remove: 102
+Student removed if present.
+
+Enter choice: 3
+Student Roll Numbers: 101 103
+
+Enter choice: 4
+Exiting program.
+
+
+## b) Sample Input and Output — Vector Class (Shopping Cart Management System)
+
+Sample Input
+1
+100
+1
+200
+1
+150
+3
+2
+3
+4
+
+
+Sample Output
+1. Add Product
+2. Remove Last Product
+3. Display Cart and Bill
+4. Exit
+Enter choice: 1
+Enter product price: 100
+Product added successfully!
+
+Enter choice: 1
+Enter product price: 200
+Product added successfully!
+
+Enter choice: 1
+Enter product price: 150
+Product added successfully!
+
+Enter choice: 3
+Product Prices: 100 200 150
+Total Bill: Rs. 450
+
+Enter choice: 2
+Last product removed!
+
+Enter choice: 3
+Product Prices: 100 200
+Total Bill: Rs. 300
+
+Enter choice: 4
+Exiting program.
