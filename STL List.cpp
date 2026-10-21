@@ -1,33 +1,32 @@
+
 #include <iostream>
 #include <list>
 using namespace std;
 
 class Attendance
 {
-    list<int> rollNo;
+    list<int> students;
 
 public:
-    void addStudent(int r)
+    void addStudent(int roll)
     {
-        rollNo.push_back(r);
-        cout << "Student added successfully." << endl;
+        students.push_back(roll);
+        cout << "Student added successfully!" << endl;
     }
 
-    void removeStudent(int r)
+    void removeStudent(int roll)
     {
-        rollNo.remove(r);
+        students.remove(roll);
         cout << "Student removed if present." << endl;
     }
 
     void display()
     {
         cout << "Student Roll Numbers: ";
-
-        for (int r : rollNo)
+        for (int roll : students)
         {
-            cout << r << " ";
+            cout << roll << " ";
         }
-
         cout << endl;
     }
 };
@@ -35,7 +34,7 @@ public:
 int main()
 {
     Attendance a;
-    int choice, r;
+    int choice, roll;
 
     do
     {
@@ -50,14 +49,14 @@ int main()
         {
             case 1:
                 cout << "Enter roll number: ";
-                cin >> r;
-                a.addStudent(r);
+                cin >> roll;
+                a.addStudent(roll);
                 break;
 
             case 2:
                 cout << "Enter roll number to remove: ";
-                cin >> r;
-                a.removeStudent(r);
+                cin >> roll;
+                a.removeStudent(roll);
                 break;
 
             case 3:
@@ -65,13 +64,12 @@ int main()
                 break;
 
             case 4:
-                cout << "Exiting program." << endl;
+                cout << "Exiting program.";
                 break;
 
             default:
-                cout << "Invalid choice." << endl;
+                cout << "Invalid choice!";
         }
-
     } while (choice != 4);
 
     return 0;
